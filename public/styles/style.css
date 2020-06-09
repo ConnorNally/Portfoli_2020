@@ -1,0 +1,131 @@
+body {
+    background-color: rgba(255, 255, 255, 0.822);
+    height:100%;
+    font-family: sans-serif;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Title Page ----------------------------- */
+
+header {
+  text-align:center;
+  height: calc(100vh + 53px);
+  /* background-color: rgb(97, 97, 97); */
+  background: linear-gradient(rgb(000,088,176), transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
+              url('../img/waterfall.jpeg') no-repeat center;
+            background-size: cover;
+}
+
+.title {
+  color:rgb(255, 255, 255);
+  font-size: 72px;
+  font-weight:300;
+  letter-spacing: 0.30em;
+  padding-top: 15%;
+  padding-bottom: 72px;
+  text-shadow: 0 1px 1px rgba(0,0,0, .8);
+}
+
+.highlight {
+  color: rgb(0, 255, 200)
+}
+
+img[src*="github"] {
+  width: 50px;
+  margin-top: 55px;
+}
+
+/* Boxes ------------------------------ */ 
+
+.primary-content {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.box {
+  color: white;
+  background-color: #434a52;
+  padding: 18% 24%;
+  border-top: 10px solid rgb(0, 255, 200);
+  margin: 55px 0 60px;
+  box-shadow: 0px 15px 20px -12px rgba(0, 0, 0, .8);
+  border-radius: 10px;
+}
+
+.arrow {
+  width: 50px;
+  margin-top: 150px;
+}
+
+#about p::first-letter {
+  font-size: 80px;
+  padding: 5px 10px;
+  margin: 10px 10px 0 0;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+/* List ------------------------------ */ 
+
+ul {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+li {
+  display: inline;
+  border-right: 1px dotted #40918c;
+  padding: 15px 10px;
+}
+
+li:nth-child(even) {
+  color: rgb(000,088,176);
+}
+
+/* Footer --------------------------- */
+
+footer {
+  text-align: right;
+}
+
+a[href^="mailto:"] {
+  text-decoration: none;
+}
+
+/* Media Queries ------------------- */
+
+@media (max-width: 1024px) {
+  .primary-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .primary-content {
+    width: 100%;
+    border: none;
+  }
+
+  header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+  }
+
+  .title {
+    font-size: 2.3rem;
+    border: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
