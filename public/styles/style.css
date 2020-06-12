@@ -108,27 +108,23 @@ img[src*="github"] {
 /* Skills ----------------------------- */
 
 .skills {
-  padding: 0 5% 5% 5%;
-  margin: auto;
+  display: flex;
   border-top: 10px solid rgb(0, 255, 200);
   box-shadow: 0px 15px 20px -12px rgba(0, 0, 0, .8);
-  background-color: #434a52;
   border-radius: 10px;
-  opacity: 1;
-  max-width: 1200px;
-  transition: 0.3s;
 }
 
-.skills:hover {
-  opacity: 0.9;
-
-}
 
 .column {
+  background-color: #434a52;
+  opacity: 1;
+  transition: 0.3s;
   width: 49%;
-  margin-top: 2%;
   text-align: center;
-  display: inline-block;
+}
+
+.column:hover {
+  opacity: 0.9;
 }
 
 .column h3 {
@@ -151,30 +147,87 @@ img[src*="github"] {
 }
 
 #personal {
-  float: right;
   border-left: 2px dotted rgb(0, 255, 200);
 }
 
 /* Projects ----------------------------- */
 
+.container {
+  /* background-color: coral; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  padding: 5px;
+}
+
 .projects {
-  width: 50%;
+  object-fit: cover;
+  width: 480px;
+  height: 480px;
+  margin: 10px;
+  /* width: 50%; */
   box-shadow: 0px 15px 20px -12px rgba(0, 0, 0, .8);
 }
 
-.projects:hover {
-  width: 60%;
-  transition: 0.3s;
+.work {
+  position: relative;
+  display: inline-block;
 }
 
-.work {
-  display:inline-block;
-  margin-bottom: 5%;
+.work img {
+  display: block;
 }
 
 .work p {
-  float: right;
+  position: absolute; 
+  top: 50%; 
+  left: 0; 
+  right: 0; 
+  text-align: center; 
+  color: rgb(206, 202, 200);
+  text-shadow: 0 0 15px;
+  visibility: hidden;
 }
+
+.work:hover p {
+  visibility: visible;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+   -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+       animation: fadein 1s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
 
 /* Footer --------------------------- */
 
