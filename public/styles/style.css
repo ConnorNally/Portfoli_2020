@@ -116,11 +116,14 @@ img[src*="github"] {
 
 
 .column {
+  flex-direction: column;
+  flex-grow: 1;
+  width: 0;
   background-color: #434a52;
   opacity: 1;
   transition: 0.3s;
-  width: 49%;
   text-align: center;
+  
 }
 
 .column:hover {
@@ -129,7 +132,7 @@ img[src*="github"] {
 
 .column h3 {
   color: rgb(0, 255, 200);
-  font-size: 1.5rem !important;
+  font-size: 2.5rem !important;
 }
 
 .column p {
@@ -140,6 +143,7 @@ img[src*="github"] {
   list-style-type: none;
   color: white;
   padding: 5px;
+  font-size: 1.5rem;
 }
 
 .column li {
@@ -253,7 +257,7 @@ a {
   }
 
   .box h2 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .box p {
@@ -265,6 +269,14 @@ a {
   .primary-content {
     width: 80%;
     border: none;
+  }
+
+  .skils {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 1 50%;
   }
 
   ul {
