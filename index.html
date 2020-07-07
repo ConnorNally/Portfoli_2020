@@ -2,104 +2,387 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="styles/mdb.min.css">
+  <link rel="shortcut icon" type="img/png" href="img/favicon.ico">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewpoint" content="width=device-width">
   <title>Connor Nally</title>
 </head>
 
+<body>
+  <script src="js/scripts.js"></script>
 
-<header>
-  <div id="title" class="title">
-    <span class="highlight">Connor Nally</span> <br>looking to start a professional career. <br>
+  <header>
+    <div id="title" class="title">
+      <span class="highlight">Connor Nally</span> <br>looking to start a professional career. <br>
+    </div>
+    <a href="#about"><img class="arrow" src="img/arrow.svg" alt="Down arrow"></a>
+  </header>
+
+  <!-- <ul id="navBar">
+    <li><a href="#title">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li>Contact</li>
+  </ul> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Top</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto smooth-scroll">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-offset="90">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" data-offset="90">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#treehouse" data-offset="90">Treehouse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <section id="about" class="py-5"">
+
+  <div class=" container">
+
+    <article id="about" class="box">
+      <h2>About</h2>
+      <p class="w-responsive mx-auto mb-5">Having spent a lot time working in Admin, working with software, I wish to
+        transition to helping created
+        the software. Having a lifetime interest in technology has lead me to pick up many of the basics of
+        programing, I then tried creating some of my own projects in my spare time. Eventually started following
+        online courses, to further my knowledge and understanding. Now I wish to further this passion of continuous
+        learning
+        by starting a career in development.
+      </p>
+    </article>
+
+    <div class="skills">
+      <div class="column">
+        <h3>Development</h3>
+        <p>I enjoy coding from scratch, and bringing ideas to life</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>React</li>
+        </ul>
+      </div>
+
+      <div id="personal" class="column">
+        <h3>Personal</h3>
+        <p>These are the greatest values the entropy of my life have created</p>
+        <ul>
+          <li>Cool</li>
+          <li>Hard worker</li>
+          <li>Pro gamer</li>
+          <li>Read the Greeks</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--Section: projects-->
+  <section id="projects" class="text-center py-5" style="background-color: #eee;">
+
+    <!-- Container -->
+    <div class="container">
+
+      <!-- Section heading -->
+      <h2 class="h1-responsive font-weight-bold mb-5">Personal Projects</h2>
+      <!-- Section description -->
+      <p class="grey-text w-responsive mx-auto mb-5">These are projects that I've created in my free time based
+        on my interests. During the process of creating these, I learnt a lot about what it's like to be a programer.
+      </p>
+
+      <!-- Grid row -->
+      <div class="row text-center">
+
+        <!-- Grid column -->
+        <div class="col-lg-6 col-md-12 mb-lg-0 mb-4">
+          <!--Featured image-->
+          <div class="view overlay rounded z-depth-1 ">
+            <img src="img/aristotle-idea.PNG" class="img-fluid" alt="Sample project image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Excerpt-->
+          <div class="card-body pb-0">
+            <h4 class="font-weight-bold my-3">Aristotle Idea 2019</h4>
+            <p class="grey-text">A very simple application that creates random colours, and compares the
+              generated image to an SVG animation of a portrait. This was made a year ago, I enjoy seeing how far
+              my knowledge has come since then.
+            </p>
+            <a class="btn aqua-gradient accent-2 btn-sm"><i class="fa fa-clone left"></i> View project</a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-6 col-md-12 mb-lg-0 mb-4">
+          <!--Featured image-->
+          <div class="view overlay rounded z-depth-1">
+            <img src="img/gr.jpg" class="img-fluid" alt="Sample project image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Excerpt-->
+          <div class="card-body pb-0">
+            <h4 class="font-weight-bold my-3">V2 Rocket Map</h4>
+            <p class="grey-text">A map created using the OpenLayers API with locations of V2 rocket impact sites.
+              The idea was inspired by Thomas Pynchon's Gravity's Rainbow.
+            </p>
+            <a class="btn aqua-gradient btn-sm"><i class="fa fa-clone left"></i> View project</a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+    </div>
+  </section>
+
+  <!--Section: treehouse -->
+  <section id="treehouse" class="py-5" style="background-color: rgb(255, 255, 255);">
+
+    <div class="container">
+
+      <article class="box">
+
+        <h2>Self Taught Work</h2>
+        <p>Courses that have been completed using Treehouse. Ranging from HTML, CSS, JavaScript, React, Node & SQL</p>
+      </article>
+
+      <div class="card-columns">
+        <!-- <div class="row row-cols-1 "> -->
+        <div class="col mb-4">
+          <div class="card bg-light">
+            <img class="tree" src="img/flashcards.JPG" alt="Express.js">
+            <div class="card-body">
+              <h5 class="card-title">Express Basics</h5>
+              <p class="card-text">Built a simple site that displays a flashcard using Express.js. The course covered
+                serving dynamic web pages with Pug, routing with Express, middleware and error handling.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card bg-light">
+            <img class="tree" src="img/dynamicnode.gif" alt="Dynamic Node">
+            <div class="card-body">
+              <h5 class="card-title">Dynamic data using Node.js</h5>
+              <p class="card-text">An app to dynamically get and then display data of users from Treehouse</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card bg-light">
+            <img class="tree" src="img/gr.jpg" alt="Gravity's Rainbow Work">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card bg-light slide">
+            <img class="img-top" src="img/OOJCode.jpg" alt="Back of card">
+            <img class="tree" src="img/connect4.gif" alt="Connect 4">
+            <div class="card-body">
+              <h5 class="card-title">Object-Oriented JavaScript</h5>
+              <p class="card-text">A connect 4 game made using Object-Oriented JavaScript, using Constructor
+                Methods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+  </section>
+
+  <!--Section: call to action-->
+  <div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg')">
+    <div class="flex-center rgba-black-light pattern-1">
+        <div class="white-text smooth-scroll mx-4">
+            <h2 class="h2-responsive mb-5 wow fadeIn">This bit is cool!</h2>
+        </div>
+    </div>
   </div>
-</header>
+  <!--Section: call to action-->
 
-<ul id="navBar">
-  <li><a href="#title">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#projects">Work</a></li>
-  <li>Contact</li>
-</ul>
+  <!--Section: contact-->
+  <section id="contact" class="py-5" style="background-color: #eee;">
 
-<main class="primary-content">
+    <div class="container">
 
-  <article id="about" class="box">
-    <h2>About</h2>
-    <p>I am obsessed with learning, self teaching myself in preperation
-      of a career in development.
-    </p>
-  </article>
+      <!-- Section heading -->
+      <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact</h2>
+      <!-- Section description -->
+      <p class="text-center w-responsive mx-auto mb-5">Send a quick message to get in touch!</p>
 
-  <div class="skills">
-    <div class="column">
-      <h3>Development</h3>
-      <p>I enjoy coding from scratch, and bringing ideas to life</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-        <li>React</li>
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-9 mb-md-0 mb-5">
+
+          <form>
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="contact-name" class="form-control">
+                  <label for="contact-name" class="">Your name</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="contact-email" class="form-control">
+                  <label for="contact-email" class="">Your email</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="contact-Subject" class="form-control">
+                  <label for="contact-Subject" class="">Subject</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                  <label for="contact-message">Your message</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+          </form>
+
+          <div class="text-center text-md-left">
+            <a class="btn aqua-gradient btn-md">Send</a>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="fa fa-phone fa-2x mt-4 highlight"></i>
+              <p> +44 7446 944087</p>
+            </li>
+            <li>
+              <i class="fa fa-envelope fa-2x mt-4 highlight"></i>
+              <a href="mailto:nallyconnor@gmail.com" class="mb-0">nallyconnor@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+
+  </section>
+  <!--Section: contact-->
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer pt-4">
+    <!-- Footer Elements -->
+    <div class="container">
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/connornally/" class="fa fa-instagram"></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="fa fa-linkedin"></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/ConnorNally" class="git-ic fa fa-github"></a>
+        </li>
       </ul>
+      <!-- Social buttons -->
+
+
     </div>
+    <!-- Footer Elements -->
 
-    <div id="personal" class="column">
-      <h3>Personal</h3>
-      <p>These are the greatest values the entropy of my life have created</p>
-      <ul>
-        <li>Cool</li>
-        <li>Hard worker</li>
-        <li>Pro gamer</li>
-        <li>Read the Greeks</li>
-      </ul>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© ConnorNally 2020
+
     </div>
-  </div>
+    <!-- Copyright -->
 
-  <article id="projects" class="box">
+  </footer>
+  <!-- Footer -->
 
-    <h2>Projects</h2>
-    <p>Here is all the stuff I know, and projects I have completed</p>
-  </article>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
 
-  <div class="container">
+</body>
 
-    <div class="work">
-      <img class="projects img-fluid" src="./public/img/future_work.png" alt="Future Work"> 
-      <img class="projects" src="img/future_work.png" alt="Future Work"> 
-      <p>This here is great! Look at all those V2 Rockets!</p>
-    </div>
-
-    <div class="work">
-      <img class="projects img-fluid" src="./public/img/aristotle-idea.PNG" alt="Aristotle Work">
-      <img class="projects" src="img/aristotle-idea.PNG" alt="Aristotle Work">
-      <p>'A similar fact is seen in painting. The most beautiful colours, laid on confusedly,
-        will not give as much pleasure as the chalk outline of a portrait.'</p>
-    </div>
-
-    <div class="work">
-      <img class="projects img-fluid" src="./public/img/gr.jpg" alt="Gravity's Rainbow Work">
-      <img class="projects" src="img/gr.jpg" alt="Gravity's Rainbow Work">
-    </div>
-
-  </div>
-
-
-
-  <p>yo yo yo</p>
-
-</main>
-
-<hr>
-
-<footer>
-
-  <a href="https://github.com/ConnorNally" target="_blank">
-    <img class="gitImage" src="./public/img/github-logo.png" /></a>
-
-  <p><strong>Email:</strong> <a href="mailto:nallyconnor@gmail.com">nallyconnor@gmail.com</a></p>
-  <p><strong>Phone</strong> +44 7446 944087</p>
-
-  <p><small>&copy;2020 Connor Nally</small></p>
-
-</footer>
+</html>

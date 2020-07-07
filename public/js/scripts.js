@@ -1,12 +1,7 @@
-/* Hide Navigation Bar */
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navBar").style.top = "0";
-  } else {
-    document.getElementById("navBar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+
+ // MDB Lightbox Init
+ (function () {
+  ("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+
