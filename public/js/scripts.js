@@ -1,7 +1,10 @@
 
+$(function(){
 
- // MDB Lightbox Init
- (function () {
-  ("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  $('#menuNav').hover(function(){
+
+      $('#huh').addClass('opacity');
+  }, function(){
+      $('#huh').removeClass('opacity');
+  });
 });
-
