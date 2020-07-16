@@ -80,7 +80,7 @@ header {
 }
 
 .box h2 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: rgb(0, 255, 200);
   font-weight: 700;
   letter-spacing: 5px;
@@ -90,7 +90,7 @@ header {
 }
 
 .box p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #dddcdc!important;
     line-height: 1.7;
     font-weight: 300;
@@ -118,13 +118,13 @@ header {
 }
 
 .column:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .column h3 {
   margin-top: 30px;
   color: rgb(0, 255, 200);
-  font-size: 2.5rem !important;
+  font-size: 2.5rem
 }
 
 .column p {
@@ -135,7 +135,7 @@ header {
   list-style-type: none;
   color: white;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .column li {
@@ -182,9 +182,7 @@ div.ff7{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04009d', endColorstr='#06004d',GradientType=0 );
 
 
-  -webkit-border-radius: 0 0 7px  7px;
-  -moz-border-radius: 0 0 7px  7px;
-  border-radius: 0 0 7px  7px;
+
 }
 div.ff7 *{
   color: #eff1ff;
@@ -291,6 +289,8 @@ div.ff7 *{
   }
 
   .title {
+    padding-top: 50%;
+    width: 100%;
     font-size: 58px;
   }
 
@@ -298,6 +298,14 @@ div.ff7 *{
 
 @media (max-width: 768px) {
 
+  .column h3 {
+    font-size: 135%;
+  }
+  
+  
+  .column ul {
+    font-size: 100%;
+  }
 
 
   .column {
@@ -310,7 +318,6 @@ div.ff7 *{
 
 
   header {
-    max-height: 380px;
     padding: 50px 25px 0;
   }
 
