@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
 
 <head>
   <link rel="stylesheet" href="public/styles/style.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="public/styles/mdb.min.css">
   <link rel="shortcut icon" type="public/img/png" href="public/img/favicon.ico">
+  <link rel="stylesheet" href="./styles/mdb.min.css">
+  <link rel="shortcut icon" type="./img/png" href="./img/favicon.ico">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewpoint" content="width=device-width">
+  <meta name="Description" content="Portfolio site made in 2020, showcasing some personal projects and work
+                                    created by Connor Nally.">
   <title>Connor Nally</title>
 </head>
 
@@ -21,6 +25,7 @@
       <span class="highlight">Connor Nally</span> <br>looking to start a professional career. <br>
     </div>
     <a href="#about"><img class="arrow" src="public/img/arrow.svg" alt="Down arrow"></a>
+    <a href="#about"><img class="arrow" src=".//img/arrow.svg" alt="Down arrow"></a>
   </header>
 
   <!-- <ul id="navBar">
@@ -85,6 +90,8 @@
             <li>JavaScript</li>
             <li>React</li>
             <li>SQL</li>
+            <li>C#</li>
+            <li>.NET</li>
           </ul>
         </div>
 
@@ -124,6 +131,7 @@
           <!--Featured image-->
           <div class="view overlay rounded z-depth-1 ">
             <img src="public/img/aristotle-idea.PNG" class="img-fluid" alt="Sample project image">
+            <img src="./img/aristotle-idea.PNG" class="img-fluid" alt="Sample project image">
             <a>
               <div class="mask rgba-white-slight"></div>
             </a>
@@ -146,6 +154,7 @@
           <!--Featured image-->
           <div class="view overlay rounded z-depth-1">
             <img src="public/img/V2RocketsMap.JPG" class="img-fluid" alt="Sample project image">
+            <img src="./img/V2RocketsMap.JPG" class="img-fluid" alt="Sample project image">
             <a>
               <div class="mask rgba-white-slight"></div>
             </a>
@@ -188,6 +197,7 @@
 
         <div class="card bg-light">
           <img class="tree" src="public/img/flashcards.JPG" alt="Express.js">
+          <img class="tree" src="./img/flashcards.JPG" alt="Express.js">
           <div class="card-body ff7">
             <h5 class="card-title">Express Basics</h5>
             <p class="card-text text-white">Built a simple site that displays a flashcard using Express.js. The course
@@ -199,6 +209,7 @@
 
         <div class="card bg-light">
           <img class="tree" src="public/img/dynamicnode.gif" alt="Dynamic Node">
+          <img class="tree" src="./img/dynamicnode.gif" alt="Dynamic Node">
           <div class="card-body ff7">
             <h5 class="card-title">Dynamic data using Node.js</h5>
             <p class="card-text text-white">An app to dynamically get and then display data of users from Treehouse</p>
@@ -207,7 +218,9 @@
 
         <div class="card bg-light">
 
-          <img class="tree" src="public/img/vuegif.gif" alt="Vue">
+          <video class="tree" autoplay muted loop>
+            <source src="./img/vuewebm.webm" type="video/webm">
+          </video>
           <div class="card-body ff7">
             <h5 class="card-title">Vue </h5>
             <p class="card-text text-white">Flashcards built and animated using Vue.js</p>
@@ -216,6 +229,7 @@
 
         <div class="card bg-light slide">
           <img class="tree" src="public/img/connect4.gif" alt="Connect 4">
+          <img class="tree" src="./img/connect4.gif" alt="Connect 4">
           <div class="card-body ff7">
             <h5 class="card-title">Object-Oriented JavaScript</h5>
             <p class="card-text text-white">A connect 4 game made using Object-Oriented JavaScript, using Constructor
@@ -226,6 +240,7 @@
 
         <div class="card bg-light">
           <img class="tree" src="public/img/gifsearch.gif" alt="Gif Search">
+          <img class="tree" src="./img/gifsearch.gif" alt="Gif Search">
           <div class="card-body ff7">
             <h5 class="card-title">Fetching Data with React</h5>
             <p class="card-text text-white">A data fetching app that uses the giphy API to collect gifs based on a
@@ -234,6 +249,25 @@
           </div>
         </div>
 
+        <div class="card bg-light">
+          <img class="tree" src="./img/castledefense.gif" alt="Gif Search">
+          <div class="card-body ff7">
+            <h5 class="card-title">Castle Defense Game with C#</h5>
+            <p class="card-text text-white">A little command line game that uses Object-Oriented to assign 
+              different properties and inheritance to classes 
+            </p>
+          </div>
+        </div>
+
+        <div class="card bg-light">
+          <img class="tree" src="./img/fitnessfrog.gif" alt="Gif Search">
+          <div class="card-body ff7">
+            <h5 class="card-title">Fitness Web App with C#</h5>
+            <p class="card-text text-white">A web app that uses various field types and 
+              form validation using ASP.NET MVC
+            </p>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -244,6 +278,7 @@
 
   <!--Section: call to action-->
   <div class="streak streak-md streak-photo" style="background-image:url(public/img/waterfall.jpeg)">
+  <div class="streak streak-md streak-photo" style="background-image:url(./img/waterfall-min.jpeg)">
     <div class="flex-center rgba-black-light pattern-1">
       <div class="white-text smooth-scroll mx-4">
         <h2 class="h2-responsive mb-5 wow fadeIn"></h2>
@@ -313,10 +348,13 @@
 
   <!-- jQuery -->
   <script type="text/javascript" src="public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="public/js/mdb.min.js"></script>
+  <script type="text/javascript" src="./js/mdb.min.js"></script>
 
 </body>
 
