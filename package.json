@@ -9,7 +9,7 @@
   "author": "Connor Nally",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "normalize.css": "^8.0.1"
   }
 }
